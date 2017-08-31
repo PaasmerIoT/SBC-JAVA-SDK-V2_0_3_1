@@ -57,7 +57,7 @@ $ exit
 $ cd src/main/resources/com/paasmer/devicesdkjava/util/
 ```
 
-* Edit the config.properties file to include the user name(Email), device name, feed names and GPIO pin details.
+* Edit the config.properties file to include the user name(Email), device name, feed names and Wiring Pi pin details.
 ```java
 deviceName = your device name
 feed = [{"name":"javafeed1","type":"sensor","pin":3},{"name":"javafeed2","type":"actuator","pin":5}]
@@ -65,13 +65,14 @@ userName = your email address
 timePeriod = 5
 connectionType = gpio
 ```
+* Redirect back to the main directory and continue the Execution procedure.
 ##### Using web interface
 * Login to http://dashboard.paasmer.co/, create a device and download the credentials. 
 * Copy the credential files from downloads and place them in the below directory of an sdk. 
 src/main/resources/com/paasmer/devicesdkjava/util/
 
 # Execution
- Compiling the code and generate the output file.
+ Compiling the code and generate the output file. 
 ```
 $ mvn clean package
 ```
